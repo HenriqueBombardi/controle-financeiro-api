@@ -1,4 +1,4 @@
-# 💰 Controle Financeiro Pessoal — API
+#  Controle Financeiro Pessoal — API
 
 API RESTful construída com **NestJS** e **MongoDB (Atlas)** para registrar receitas e despesas e devolver métricas que ajudam a pessoa a entender para onde o dinheiro está indo.
 
@@ -17,7 +17,7 @@ O projeto tem viés social e extensionista e pode ser usado como apoio em oficin
 ## Pré-requisitos
 
 - [Node.js](https://nodejs.org/) 20 ou superior (`node -v`)
-- Uma conta gratuita no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
+- Uma conta no [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
 
 ## Configurando o MongoDB Atlas
 
@@ -119,8 +119,6 @@ Retorna o histórico (mais recentes primeiro) e as métricas calculadas no back-
 
 ## Testando a API
 
-Use o **Postman**, **Insomnia** ou a extensão **Thunder Client** (VS Code), ou o `curl` (Linux, macOS ou Git Bash):
-
 ```bash
 # Cadastrar uma receita
 curl -X POST http://localhost:3000/transacoes \
@@ -162,8 +160,4 @@ controle-financeiro-api/
 ├── package.json
 ├── tsconfig.json
 └── tsconfig.build.json
-```
 
-## 🔒 Segurança
-
-O arquivo `.env` contém a senha do seu banco e **nunca** deve ser enviado ao GitHub — ele já está listado no `.gitignore`. Compartilhe apenas o `.env.example`, que não tem dados reais.
